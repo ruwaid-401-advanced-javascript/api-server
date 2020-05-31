@@ -1,10 +1,9 @@
 {
   "categories": [
     {
-      "name": "eeeeoooooooooooe",
-      "display_name": "wwwwe",
+      "name": "hii333",
+      "display_name": "we",
       "description": "ahwwwahaaaaaaaaaaaa",
-      "createdAt": 1590926823920,
       "id": 3
     },
     {
@@ -22,10 +21,16 @@
   ],
   "products": [
     {
-      "name": "plplpl",
-      "display_name": "wwwwe",
-      "description": "ahwwwahaaaaaaaaaaaa",
-      "id": 1
+      "name": "second prod",
+      "display_name": "swagger",
+      "description": "test post",
+      "id": 2
+    },
+    {
+      "name": "third prod",
+      "display_name": "swagger",
+      "description": "test post",
+      "id": 3
     }
   ]
 }

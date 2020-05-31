@@ -7,7 +7,7 @@
 ### Links and Resources
 
 - [submission PR](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/1)
-- [swagger hub](https://app.swaggerhub.com/apis/rowaidsayyed/default-title/0.1)
+- [swagger hub](https://app.swaggerhub.com/apis/rowaidsayyed/ALL-CRUD-cat-pro/0.2)
 
 
 ### Setup
