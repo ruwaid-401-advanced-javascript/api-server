@@ -1,0 +1,25 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "## Project: HTTP and REST",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruwaid-401-advanced-javascript/api-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruwaid-401-advanced-javascript/api-server/issues"
+  },
+  "homepage": "https://github.com/ruwaid-401-advanced-javascript/api-server#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "json-server": "^0.16.1"
+  }
+}

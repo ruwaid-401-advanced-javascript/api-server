@@ -12,8 +12,12 @@
 
 ### Setup
 
+#### .env requirements
+PORT - Port Number
+
 #### How to initialize/run your application 
-run the command `json-server --watch ./data/db.json`
+run the command `node server.js`
 
-
-
+### How to use your library
+#### Tests
+* Lint test: npm run lint

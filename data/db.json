@@ -1,4 +1,31 @@
 {
-  "categories": [],
-  "products": []
+  "categories": [
+    {
+      "name": "eeeeoooooooooooe",
+      "display_name": "wwwwe",
+      "description": "ahwwwahaaaaaaaaaaaa",
+      "createdAt": 1590926823920,
+      "id": 3
+    },
+    {
+      "name": "plplpl",
+      "display_name": "wwwwe",
+      "description": "ahwwwahaaaaaaaaaaaa",
+      "id": 4
+    },
+    {
+      "name": "car",
+      "display_name": "first POST",
+      "description": "ahwwwahaaaaaaaaaaaa",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "name": "plplpl",
+      "display_name": "wwwwe",
+      "description": "ahwwwahaaaaaaaaaaaa",
+      "id": 1
+    }
+  ]
 }
