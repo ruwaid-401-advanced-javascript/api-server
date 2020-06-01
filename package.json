@@ -1,0 +1,38 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "## Project: HTTP and REST",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "json-server": "^0.16.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "jest": "^26.0.1",
+    "jsdoc": "^3.6.4",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "test": "jest --coverage --verbose ",
+    "start": "node index.js",
+    "lint": "eslint '**/*.js'",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruwaid-401-advanced-javascript/api-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruwaid-401-advanced-javascript/api-server/issues"
+  },
+  "homepage": "https://github.com/ruwaid-401-advanced-javascript/api-server#readme"
+}

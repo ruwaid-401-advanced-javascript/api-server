@@ -1,4 +1,4 @@
-# LAB - Class 06
+# LAB - Class 07
 
 ## Project: HTTP and REST
 
@@ -6,14 +6,27 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/1)
-- [Github actions](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/1/checks)
+- [submission PR](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/2)
+- [Github actions](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/2/checks)
+- [swagger hub](https://app.swaggerhub.com/apis/rowaidsayyed/ALL-CRUD-cat-pro/0.2)
 
+## Modules
+### server.js
+### logger.js
+### 404.js
+### 500.js
+### timestamp.js
 
 ### Setup
+#### .env requirements
+* PORT - Port Number
 
 #### How to initialize/run your application 
-
+* `npm start`
+* EndPoint: / 
+* EndPoint: /docs Return a JSdoc documentaion pages
+* EndPoint: /categories 
+* EndPoint: /products
 
 #### How to use your library 
 #### Tests
@@ -22,4 +35,4 @@
 
 #### UML
 
-![UML Diagram](./assets/whiteBoard-class-06.jpeg)
+![UML Diagram](./assets/whiteBoard-class-07.jpeg)
