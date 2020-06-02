@@ -1,7 +1,7 @@
 'use strict';
 
 
-const loggerMiddleWare = require('../middleware/logger');
+const loggerMiddleWare = require('../../middleware/logger');
 
 describe('logger middleware', () => {
 

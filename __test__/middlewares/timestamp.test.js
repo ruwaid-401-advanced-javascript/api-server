@@ -1,6 +1,6 @@
 'use strict';
 
-const timestamp =require('../middleware/timestamp');
+const timestamp =require('../../middleware/timestamp');
 let req = {};
 let res = {};
 let next = jest.fn(); //function;
