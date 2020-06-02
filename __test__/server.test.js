@@ -1,8 +1,7 @@
 'use strict';
 
-const { server, start } = require('../lib/server');
+const { server } = require('../lib/server');
 const supergoose = require('@code-fellows/supergoose');
-// const mongoose= require('mongoose');
 const mockRequest = supergoose(server);
 
 jest.spyOn(global.console, 'log');
@@ -10,16 +9,6 @@ jest.spyOn(global.console, 'log');
 let idCategory = null;
 let idProducts = null;
 describe('server.js', () => {
-  // beforeAll(done => {
-  //   done();
-  // });
-
-  // afterAll(done => {
-  //   // Closing the DB connection allows Jest to exit successfully.
-  //   mongoose.connection.close();
-  //   start.close();
-  //   done();
-  // });
 
   it('should respond with 500', () => {
     return mockRequest.get('/error500')
