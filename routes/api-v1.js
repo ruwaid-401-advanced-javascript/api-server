@@ -3,16 +3,20 @@
 const express = require('express');
 const router = express.Router();
 
-const products = require('../lib/models/products/products.collection');
-router.get('/', productsGetFunc);
-router.get('/:id', productsGetByIDFunc);
-router.post('/', productsPostFunc);
-router.put('/:id', productsPUTByIDFunc);
-router.delete('/:id', productsDeleteByIDFunc);
+const modelSelector = require('../middleware/modelSelector');
+
+router.param('model',modelSelector);
+
+router.get('/:model', getFunc);
+router.get('/:model/:id', getByIDFunc);
+router.post('/:model', postFunc);
+router.put('/:model/:id', putByIDFunc);
+router.delete('/:model/:id', deleteByIDFunc);
 
 
-function productsGetFunc(req, res,next) {
-  products.read()
+
+function getFunc(req, res, next) {
+  req.model.read()
     .then(data => {
       let output = {
         count: data.length,
@@ -22,38 +26,37 @@ function productsGetFunc(req, res,next) {
     }).catch(next);
 }
 
-function productsPostFunc(req, res,next) {
+function postFunc(req, res, next) {
   let newdata = req.body;
-  products.creat(newdata)
+  req.model.creat(newdata)
     .then(data => {
       res.status(201).json(data);
     }).catch(next);
 }
 
-function productsGetByIDFunc(req, res,next) {
+function getByIDFunc(req, res, next) {
   let id = req.params.id;
-  products.read(id)
+  req.model.read(id)
     .then(data => {
       res.status(200).json(data);
     }).catch(next);
 }
 
-function productsPUTByIDFunc(req, res,next) {
+function putByIDFunc(req, res, next) {
   let updatedData = req.body;
   let id = req.params.id;
-  products.update(id,updatedData)
+  req.model.update(id,updatedData)
     .then(data =>{
       res.status(201).json(data);
     }).catch(next);
 }
 
-function productsDeleteByIDFunc(req, res,next) {
+function deleteByIDFunc(req, res, next) {
   let id = req.params.id;
-  products.delete(id)
+  req.model.delete(id)
     .then(()=> {
       res.status(200).send('deleted wooow ');
     }).catch(next);
 }
-
 
 module.exports = router;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1591134183103" clover="3.2.0">
-  <project timestamp="1591134183104" name="All files">
-    <metrics statements="108" coveredstatements="107" conditionals="2" coveredconditionals="2" methods="35" coveredmethods="33" elements="145" coveredelements="142" complexity="0" loc="108" ncloc="108" packages="6" files="12" classes="12"/>
+<coverage generated="1591189468400" clover="3.2.0">
+  <project timestamp="1591189468400" name="All files">
+    <metrics statements="93" coveredstatements="92" conditionals="2" coveredconditionals="2" methods="26" coveredmethods="24" elements="121" coveredelements="118" complexity="0" loc="93" ncloc="93" packages="6" files="12" classes="12"/>
     <package name="lib">
-      <metrics statements="24" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <metrics statements="22" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <file name="server.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/lib/server.js">
-        <metrics statements="24" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <metrics statements="22" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
@@ -13,30 +13,28 @@
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
       </file>
     </package>
     <package name="lib.models">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
       <file name="mongo.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/lib/models/mongo.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
-        <line num="19" count="7" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
         <line num="28" count="17" type="cond" truecount="2" falsecount="0"/>
         <line num="29" count="17" type="stmt"/>
         <line num="37" count="19" type="stmt"/>
@@ -50,36 +48,36 @@
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="categories.collection.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/lib/models/categories/categories.collection.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
       </file>
       <file name="categories.schema.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/lib/models/categories/categories.schema.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="12" count="3" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
       </file>
     </package>
     <package name="lib.models.products">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="products.collection.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/lib/models/products/products.collection.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
       </file>
       <file name="products.schema.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/lib/models/products/products.schema.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
       </file>
     </package>
     <package name="middleware">
-      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
       <file name="404.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/middleware/404.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="16" count="2" type="stmt"/>
@@ -98,6 +96,20 @@
         <line num="18" count="15" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
       </file>
+      <file name="modelSelector.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/middleware/modelSelector.js">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="17" count="25" type="stmt"/>
+        <line num="20" count="25" type="stmt"/>
+        <line num="21" count="25" type="stmt"/>
+        <line num="22" count="25" type="stmt"/>
+        <line num="23" count="23" type="stmt"/>
+        <line num="24" count="23" type="stmt"/>
+        <line num="25" count="23" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+      </file>
       <file name="timestamp.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/middleware/timestamp.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="17" count="15" type="stmt"/>
@@ -106,62 +118,35 @@
       </file>
     </package>
     <package name="routes">
-      <metrics statements="50" coveredstatements="50" conditionals="0" coveredconditionals="0" methods="20" coveredmethods="20"/>
-      <file name="categories.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/routes/categories.js">
-        <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
+      <metrics statements="26" coveredstatements="26" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
+      <file name="api-v1.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/routes/api-v1.js">
+        <metrics statements="26" coveredstatements="26" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
         <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
-        <line num="36" count="2" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="45" count="2" type="stmt"/>
-        <line num="46" count="2" type="stmt"/>
-        <line num="48" count="2" type="stmt"/>
-        <line num="53" count="2" type="stmt"/>
-        <line num="54" count="2" type="stmt"/>
-        <line num="56" count="2" type="stmt"/>
-        <line num="60" count="2" type="stmt"/>
-      </file>
-      <file name="product.js" path="/mnt/c/Users/STD/Desktop/courses/401d3/api-server/routes/product.js">
-        <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
-        <line num="43" count="2" type="stmt"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="46" count="2" type="stmt"/>
-        <line num="51" count="2" type="stmt"/>
-        <line num="52" count="2" type="stmt"/>
-        <line num="54" count="2" type="stmt"/>
-        <line num="59" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+        <line num="62" count="2" type="stmt"/>
       </file>
     </package>
   </project>

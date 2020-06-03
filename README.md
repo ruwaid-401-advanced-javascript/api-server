@@ -1,4 +1,4 @@
-# LAB - Class 08
+# LAB - Class 09
 
 ## Project: HTTP and REST
 
@@ -6,8 +6,8 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/3)
-- [Github actions](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/3/checks)
+- [submission PR](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/4)
+- [Github actions](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/4/checks)
 - [swagger hub](https://app.swaggerhub.com/apis/rowaidsayyed/ALL-CRUD-cat-pro/0.2)
 
 ### Documentaion
@@ -29,8 +29,8 @@
 * `npm start`
 * EndPoint: `/` 
 * EndPoint: `/docs` 
-* EndPoint: `/categories` 
-* EndPoint: `/products`
+* EndPoint: `/api/v1/categories` 
+* EndPoint: `/api/v1/products`
 
 #### How to use your library 
 #### Tests
