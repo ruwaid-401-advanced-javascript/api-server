@@ -19,15 +19,9 @@ let testClass = new Modelmongo(testModel);
 
 describe('mongo.js', () => {
 
-  beforeAll(async () => {
-    const url = `mongodb://localhost:27017/testapi`;
-    await mongoose.connect(url, { useNewUrlParser: true });
-  });
-
   afterEach(async () => {
     await testModel.deleteMany();
   });
-
 
   it('can get() all categories', () => {
     let testObj = { name: 'test 1' };

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: lib/models/categories/categories.schema.js</title>
+    <title>JSDoc: Source: middleware/modelSelector.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: lib/models/categories/categories.schema.js</h1>
+    <h1 class="page-title">Source: middleware/modelSelector.js</h1>
 
     
 
@@ -28,23 +28,36 @@
         <article>
             <pre class="prettyprint source linenums"><code>'use strict';
 
+
 /**
- * Schema for categories
- * @module categorySchema 
+ * (Middleware) will select the correct model for the requested route
+ * @module modelSelector
  */
 
 /**
- * @property  {string} name -required
- * @property {string} description -required
- */
-const mongoose = require('mongoose');
+* Input 
+* @function logger
+* @param req - request
+* @param res  - response
+* @param next - next
+*/
+function modelSelector(req, res, next) {
+  let model = req.params.model;
 
-const category = mongoose.Schema({
-  name: { type: String, required: true },
-  description: { type: String, required: true },
-});
-
-module.exports = mongoose.model('category', category);
+  let modelfile = null;
+  try {
+    modelfile = require(`../lib/models/${model}/${model}.collection`);
+    req.model = modelfile;
+    next();
+    return;
+  }
+  catch (e) {
+    next('invalid model');
+    modelfile = null;
+    return;
+  }
+}
+module.exports = modelSelector;
 </code></pre>
         </article>
     </section>
