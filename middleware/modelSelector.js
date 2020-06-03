@@ -16,7 +16,6 @@
 function modelSelector(req, res, next) {
   let model = req.params.model;
 
-  // Code 1: i used this code for test(modelSelector.test.js)  
   let modelfile = null;
   try {
     modelfile = require(`../lib/models/${model}/${model}.collection`);
@@ -29,21 +28,5 @@ function modelSelector(req, res, next) {
     modelfile = null;
     return;
   }
-
-  // // Code 2: not worked well when test model not exists (modelSelector.test.js)  
-  // // but worked well when runing the server(localhost)
-  // const modelfile = require(`../lib/models/${model}/${model}.collection`);
-
-  // switch (model) {
-  // case 'categories':
-  // case 'products':
-  //   req.model = modelfile;
-  //   next();
-  //   return;
-  // default:
-  //   next('invalid model');
-  //   return;
-  // }
 }
-
 module.exports = modelSelector;
