@@ -1,6 +1,6 @@
 'use strict';
 
-const error404 = require('../middleware/404');
+const error404 = require('../../middleware/404');
 let req = {};
 let res = { status: function (s) { this.status = s; return this; }, send: () => { } };
 let next = jest.fn(); //function;

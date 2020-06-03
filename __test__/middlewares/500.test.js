@@ -1,6 +1,6 @@
 'use strict';
 
-const errorHandler = require('../middleware/500');
+const errorHandler = require('../../middleware/500');
 let req = {};
 let res = { status: function (s) { this.status = s; return this; }, json: () => { } };
 let err = 'erroooorr';

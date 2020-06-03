@@ -1,4 +1,4 @@
-# LAB - Class 07
+# LAB - Class 08
 
 ## Project: HTTP and REST
 
@@ -6,8 +6,8 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/2)
-- [Github actions](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/2/checks)
+- [submission PR](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/3)
+- [Github actions](https://github.com/ruwaid-401-advanced-javascript/api-server/pull/3/checks)
 - [swagger hub](https://app.swaggerhub.com/apis/rowaidsayyed/ALL-CRUD-cat-pro/0.2)
 
 ### Documentaion

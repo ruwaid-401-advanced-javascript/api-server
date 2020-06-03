@@ -1,11 +1,13 @@
 'use strict';
 
 const { server } = require('../lib/server');
-const supertest = require('supertest');
-const mockRequest = supertest(server);
+const supergoose = require('@code-fellows/supergoose');
+const mockRequest = supergoose(server);
 
 jest.spyOn(global.console, 'log');
 
+let idCategory = null;
+let idProducts = null;
 describe('server.js', () => {
 
   it('should respond with 500', () => {
@@ -31,6 +33,20 @@ describe('server.js', () => {
       });
   });
 
+  it('should post properly /categories', () => {
+    let testObj = { 'name': 'test name 1', description: 'test test 1 ' };
+    return mockRequest
+      .post('/categories')
+      .send(testObj)
+      .then(results => {
+        idCategory = results.body._id;
+        expect(results.status).toBe(201);
+        Object.keys(testObj).forEach(key => {
+          expect(results.body[key]).toEqual(testObj[key]);
+        });
+      });
+  });
+
   it('should respond properly /categories', () => {
     return mockRequest
       .get('/categories')
@@ -41,37 +57,48 @@ describe('server.js', () => {
 
   it('should respond properly /categories/:id', () => {
     return mockRequest
-      .get('/categories/:id')
+      .get(`/categories/${idCategory}`)
       .then(results => {
         expect(results.status).toBe(200);
       });
   });
 
-  it('should post properly /categories', () => {
-    return mockRequest
-      .post('/categories')
-      .send({ 'name': 'test name' })
-      .then(results => {
-        expect(results.status).toBe(201);
-      });
-  });
 
   it('should PUT properly /categories/:id', () => {
+    let testObj = { 'name': 'test name 1 updated', description: 'test test 1 updated ' };
     return mockRequest
-      .put('/categories/1')
-      .send({ 'name': 'test name update' })
+      .put(`/categories/${idCategory}`, testObj)
+      .send(testObj)
       .then(results => {
         expect(results.status).toBe(201);
+        Object.keys(testObj).forEach(key => {
+          expect(results.body[key]).toEqual(testObj[key]);
+        });
       });
   });
+
   it('should DELETE properly /categories/:id', () => {
     return mockRequest
-      .delete('/categories/1')
+      .delete(`/categories/${idCategory}`)
       .then(results => {
         expect(results.status).toBe(200);
       });
   });
 
+
+  it('should post properly /products', () => {
+    let testObj = { name: 'test 1', category: 'test cat', description: 'test test 1 ', price: 2, inStock: 4 };
+    return mockRequest
+      .post('/products')
+      .send(testObj)
+      .then(results => {
+        idProducts = results.body._id;
+        expect(results.status).toBe(201);
+        Object.keys(testObj).forEach(key => {
+          expect(results.body[key]).toEqual(testObj[key]);
+        });
+      });
+  });
 
 
   it('should respond properly /products', () => {
@@ -84,35 +111,27 @@ describe('server.js', () => {
 
   it('should respond properly /products/:id', () => {
     return mockRequest
-      .get('/products/:id')
+      .get(`/products/${idProducts}`)
       .then(results => {
         expect(results.status).toBe(200);
       });
   });
+
   it('should PUT properly /products/:id', () => {
+    let updateTestObj = { name: 'test 4 updated', category: 'test cat', description: 'test test 4 updated', price: 2, inStock: 4 };
     return mockRequest
-      .put('/products/1')
-      .send({ 'name': 'test name update' })
+      .put(`/products/${idProducts}`)
+      .send(updateTestObj)
       .then(results => {
         expect(results.status).toBe(201);
       });
   });
-
 
   it('should DELETE properly /products/:id', () => {
     return mockRequest
-      .delete('/products/1')
+      .delete(`/products/${idProducts}`)
       .then(results => {
         expect(results.status).toBe(200);
-      });
-  });
-
-  it('should post properly /products', () => {
-    return mockRequest
-      .post('/products')
-      .send({ 'name': 'test name' })
-      .then(results => {
-        expect(results.status).toBe(201);
       });
   });
 });
